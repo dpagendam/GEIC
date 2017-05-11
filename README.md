@@ -17,10 +17,10 @@ To install the package from GitHub, you will first need to install the devtools 
 <code>install.packages("devtools")</code>
 
 Once installed, you will need to load the devtools R package and install the GEIC R package using:
-
+<code>
 library(devtools)
 install_github("dpagendam/GEIC")
-
+</code>
 
 ## Using this package
 
