@@ -1,0 +1,11 @@
+Package: GEIC
+Title: A package for the classification of Google Earth imagery
+Version: 0.666
+Authors@R: c(person(given = "Dan", family = "Pagendam", email = "dan.pagendam@csiro.au", role = c("aut", "cre")))
+Description: This package provides functions for classification (supervised learning) of pixels in rasterised Google Earth imagery into user defined categories (e.g. grass, trees, house, road, water etc).
+Depends: R (>= 3.2.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+Imports: ranger, raster, png
