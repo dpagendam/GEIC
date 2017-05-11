@@ -14,7 +14,7 @@ The main function of use is called "geic".  To use this function, the user will 
 
 To install the package from GitHub, you will first need to install the devtools package in R using the command:
 
-install.packages("devtools")
+<code>install.packages("devtools")</code>
 
 Once installed, you will need to load the devtools R package and install the GEIC R package using:
 
