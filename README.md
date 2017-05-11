@@ -33,8 +33,8 @@ packageDataDir = system.file("extdata", package="GEIC")
 classified = geic(pathToPNGFile = paste0(packageDataDir, "/Aerial.png"), dirTrain = packageDataDir, neighbourhood = 1, folderNames = c("Road", "Roof", "Grass", "Trees", "Water"))
 ```
 
-This will take a couple of minutes to run.  Once completed, the classified version of "Aerial.png" will be plotted.  The object named "classified" is a list containing two named items:
+This will take a couple of minutes to run.  Once completed, the classified version of "Aerial.png" will be plotted.  The object named <code>classified</code> is a list containing two named items:
 
-1. A raster object (from the R package "raster") containing the classified image.
-2. A data frame called "lookupTable" that provides the integer codes for each of the landscape classes.
+1. A <code>raster</code> object (from the raster R package) containing the classified image.
+2. A data frame called <code>lookupTable</code> that provides the integer codes for each of the landscape classes.
 
