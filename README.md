@@ -14,27 +14,24 @@ The main function of use is called "geic".  To use this function, the user will 
 
 To install the package from GitHub, you will first need to install the devtools package in R using the command:
 
-<code>install.packages("devtools")</code>
+```install.packages("devtools")```
 
 Once installed, you will need to load the devtools R package and install the GEIC R package using:
 
-<code>
+```
 library(devtools)
-
 install_github("dpagendam/GEIC")
-</code>
+```
 
 ## Using this package
 
 To use GEIC with the packaged example data, try:
 
-<code>
+```
 library(GEIC)
-
 packageDataDir = system.file("extdata", package="GEIC")
-
 classified = geic(pathToPNGFile = paste0(packageDataDir, "/Aerial.png"), dirTrain = packageDataDir, neighbourhood = 1, folderNames = c("Road", "Roof", "Grass", "Trees", "Water"))
-</code>
+```
 
 This will take a couple of minutes to run.  Once completed, the classified version of "Aerial.png" will be plotted.  The object named "classified" is a list containing two named items:
 
