@@ -42,7 +42,7 @@ geic = function(pathToPNGFile, dirTrain, neighbourhood, folderNames = NULL)
 	rf = ranger::ranger(class ~ ., data = X)
 	
 	colnames(X2) <- colnames(X)[-1]
-	classes = ranger::predict(rf, X2)$predictions
+	classes = predict(rf, X2)$predictions
 	integerClasses = classesToIntegers(classes)
 	r = raster::raster(matrix(integerClasses, dim(aerial)[1], dim(aerial)[2], byrow = TRUE))
 	plot(r)
