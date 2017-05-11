@@ -28,9 +28,13 @@ install_github("dpagendam/GEIC")
 
 To use GEIC with the packaged example data, try:
 
+<code>
 library(GEIC)
+
 packageDataDir = system.file("extdata", package="GEIC")
+
 classified = geic(pathToPNGFile = paste0(packageDataDir, "/Aerial.png"), dirTrain = packageDataDir, neighbourhood = 1, folderNames = c("Road", "Roof", "Grass", "Trees", "Water"))
+</code>
 
 This will take a couple of minutes to run.  Once completed, the classified version of "Aerial.png" will be plotted.  The object named "classified" is a list containing two named items:
 
