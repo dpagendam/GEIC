@@ -24,7 +24,6 @@ createTrainingSetRGB = function(dir, neighbourhood, folderNames = NULL)
 	
 	trainingFeatures = matrix(NA, 0, 4*((2*neighbourhood + 1)^2))
 	trainingClasses = c()
-	
 	for(folder in folderNames)
 	{
 		s = strsplit(dir, "")[[1]]
